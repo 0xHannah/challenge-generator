@@ -10,7 +10,7 @@ window.onload = function () {
     var challengeText = document.getElementById("Challenge-Text")
     
     var kills = ["3", "5", "10", "15", "20", "25"]
-    var maps = ["badwater", "upward", "2fort"]
+    var maps = ["badwater", "upward", "2fort", "borneo"]
     var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engie", "medic", "sniper", "spy"]
     var points = ["10", "20", "30", "50", "70", "100"]
     var specialKills = ["headshot", "backstab", "sentry", "destruction", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
