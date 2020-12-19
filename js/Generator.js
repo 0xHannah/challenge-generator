@@ -1,8 +1,5 @@
 function random(x) {
-    var y
-    
-    y = x[Math.floor(Math.random()*x.length)]
-
+    var y = x[Math.floor(Math.random()*x.length)]
     return y
 }
 
@@ -15,7 +12,7 @@ window.onload = function () {
     var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engineer", "medic", "sniper", "spy"]
     var points = ["10", "20", "30", "50", "70", "100"]
     var specialKills = ["headshot", "backstab", "sentry", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
-    var wins = ["1", "3", "5"]
+    var wins = ["2", "3", "5"]
 
     var i = Math.floor(Math.random() * 6)
     switch(i) {
