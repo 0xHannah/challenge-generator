@@ -32,7 +32,7 @@ window.onload = function () {
             challengeText.innerHTML = "Get " + random(kills) + " assists as " + random(character) + " in one life."
             break;
         case 5:
-            challengeText.innerHTML = "Win " + random(wins) + " rounds on " + random(maps) + "."
+            challengeText.innerHTML = "complete " + random(wins) + " map objectives on " + random(maps) + "."
             break;
         default: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
