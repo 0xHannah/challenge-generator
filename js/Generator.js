@@ -15,8 +15,9 @@ window.onload = function () {
     var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engineer", "medic", "sniper", "spy"]
     var points = ["10", "20", "30", "50", "70", "100"]
     var specialKills = ["headshot", "backstab", "sentry", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
+    var wins = ["1", "3", "5"]
 
-    var i = Math.floor(Math.random() * 5)
+    var i = Math.floor(Math.random() * 6)
     switch(i) {
         case 0: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
@@ -32,6 +33,9 @@ window.onload = function () {
             break;
         case 4:
             challengeText.innerHTML = "Get " + random(kills) + " assists as " + random(character) + " in one life."
+            break;
+        case 5:
+            challengeText.innerHTML = "Win " + random(wins) + " rounds on " + random(maps) + "."
             break;
         default: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
