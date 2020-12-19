@@ -16,7 +16,7 @@ window.onload = function () {
     var points = ["10", "20", "30", "50", "70", "100"]
     var specialKills = ["headshot", "backstab", "sentry", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
 
-    var i = Math.floor(Math.random() * 4)
+    var i = Math.floor(Math.random() * 5)
     switch(i) {
         case 0: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
