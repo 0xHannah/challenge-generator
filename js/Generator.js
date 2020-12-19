@@ -14,7 +14,7 @@ window.onload = function () {
     var maps = ["pier", "snowfall", "snowville", "wutville", "2fort", "double cross", "landfall", "sawmill", "turbine", "well", "5gorge", "badlands", "coldfront", "fastlane", "foundry", "freight", "granary", "gullywash", "metalworks", "powerhouse", "process", "snakewater", "sunshine", "vanguard", "well", "yukon", "dustbowl", "egypt", "gorge", "gravel pit", "junction", "mercenary park", "mossrock", "mountain lab", "snowplow", "steel", "standin", "hydro", "badwater basin", "barnblitz", "borneo", "enclosure", "frontier", "gold rush", "hoodoo", "precipice", "snowycoast", "swiftwater", "thunder mountain", "upward", "banana bay", "hightower", "nightfall", "pipeline", "badlands", "koth badlands", "brazil", "harvest", "highpass", "kong king", "lakeside", "lazarus", "nucleus", "probed", "sawmill", "suijin", "viaduct", "doomsday", "dustbowl", "ctf foundry", "ctf gorge", "hellfire", "ctf thunder mountain", "brickyard", "district", "timbertown", "watergate"]
     var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engineer", "medic", "sniper", "spy"]
     var points = ["10", "20", "30", "50", "70", "100"]
-    var specialKills = ["headshot", "backstab", "sentry", "destruction", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
+    var specialKills = ["headshot", "backstab", "sentry", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
 
     var i = Math.floor(Math.random() * 4)
     switch(i) {
