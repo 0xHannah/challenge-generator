@@ -10,7 +10,7 @@ window.onload = function () {
     var challengeText = document.getElementById("Challenge-Text")
     
     var kills = ["3", "5", "10", "15", "20", "25"]
-    var maps = ["badwater", "upward", "2fort", "borneo"]
+    var maps = ["pier", "snowfall", "snowville", "wutville", "2fort", "double cross", "landfall", "sawmill", "turbine", "well", "5gorge", "badlands", "coldfront", "fastlane", "foundry", "freight", "granary", "gullywash", "metalworks", "powerhouse", "process", "snakewater", "sunshine", "vanguard", "well", "yukon", "dustbowl", "egypt", "gorge", "gravel pit", "junction", "mercenary park", "mossrock", "mountain lab", "snowplow", "steel", "standin", "hydro", "badwater basin", "barnblitz", "borneo", "enclosure", "frontier", "gold rush", "hoodoo", "precipice", "snowycoast", "swiftwater", "thunder mountain", "upward", "banana bay", "hightower", "nightfall", "pipeline", "badlands", "koth badlands", "brazil", "harvest", "highpass", "kong king", "lakeside", "lazarus", "nucleus", "probed", "sawmill", "suijin", "viaduct", "doomsday", "dustbowl", ""]
     var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engie", "medic", "sniper", "spy"]
     var points = ["10", "20", "30", "50", "70", "100"]
     var specialKills = ["headshot", "backstab", "sentry", "destruction", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
