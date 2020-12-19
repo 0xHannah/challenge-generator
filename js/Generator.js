@@ -29,6 +29,9 @@ window.onload = function () {
         case 3:
             challengeText.innerHTML = "Play on " + random(maps) + " and get " + random(kills) + " "+  random(specialKills) + " kills in one round"
             break;
+        case 4:
+            challengeText.innerHTML = "Play any map and get " + random(kills) + " " + random(specialKills) + " kills in one round"
+            break;
         default: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
     }
