@@ -7,3 +7,24 @@ a {
     text-decoration-line: none;
     color:yellow;
 }
+
+Button {
+	background-color:#ffffff;
+	border-radius:7.5px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-size:12px;
+    padding:10px 20px;
+    margin-right:5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+Button:hover {
+	background-color:#e3e3e3;
+}
+Button:active {
+	position:relative;
+	top:1px;
+}
