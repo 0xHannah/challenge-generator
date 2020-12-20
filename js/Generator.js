@@ -54,7 +54,7 @@ function pub() {
 
 function displayChallenge() {
     var challengeText = document.getElementById("Challenge-Text")
-    challengeText.innerHTML = "Not working"
+    challengeText.innerHTML = "Choose a difficulty"
     var i = Math.floor(Math.random() * 6)
     switch(i) {
         case 0: 
@@ -76,6 +76,6 @@ function displayChallenge() {
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
             break;
         default: 
-            challengeText.innerHTML = "Choose a difficulty"
+            challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
     }
 }
