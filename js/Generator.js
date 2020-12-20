@@ -76,6 +76,6 @@ function displayChallenge() {
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
             break;
         default: 
-            challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
+            challengeText.innerHTML = "Choose a difficulty"
     }
 }
