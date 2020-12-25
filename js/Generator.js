@@ -57,7 +57,7 @@ function pub() {
 function displayChallenge() {
     var challengeText = document.getElementById("Challenge-Text")
     challengeText.innerHTML = "Choose a difficulty"
-    var i = Math.floor(Math.random() * 6)
+    var i = Math.floor(Math.random() * 7)
     switch(i) {
         case 0: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
@@ -78,7 +78,7 @@ function displayChallenge() {
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
             break;
         case 6:
-            challengeText.innerHTML = "Get " + random(specialKills) + " kills with the " + random(hardWeapons) + " in one game."
+            challengeText.innerHTML = "Get " + random(specialKillAmounts) + " kills with the " + random(hardWeapons) + " in one game."
             break;
         default: 
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
