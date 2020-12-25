@@ -6,7 +6,7 @@ var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engineer", "me
 var basepoints = ["10", "30", "50", "70", "100"]
 var specialKills = ["market garden", "trickstab", "melee", "airblast", "bleed"]
 var easierKills = ["headshot", "backstab", "sentry", "meatshot"]
-var basewins = ["1,", "2", "3", "4", "5"]
+var basewins = ["1", "2", "3", "4", "5"]
 var hardWeapons = ["flying guillotine", "bat", "holy mackerel", "Fan o' war", "wrap assassin", "direct hit", "beggars bazooka", "manntread", "shovel", "escape plan", "fire axe", "lollichop", "sharpened volcano fragment", "third degree", "hot hand", "ullapool caber", "huo-long heater", "family business", "holiday punch", "pomson 6000", "eureka effect", "syringe gun", "blutsauger", "overdose", "bonesaw", "übersaw", "vita-saw", "amputator", "solemn vow", "sydney sleeper", "shahanshah", "enforcer"] 
 
 function random(x) {
@@ -57,7 +57,7 @@ function pub() {
 function displayChallenge() {
     var challengeText = document.getElementById("Challenge-Text")
     challengeText.innerHTML = "Choose a difficulty"
-    var i = Math.floor(Math.random() * 7)
+    var i = Math.floor(Math.random() * 11)
     switch(i) {
         case 0: 
         challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
@@ -80,6 +80,17 @@ function displayChallenge() {
         case 6:
             challengeText.innerHTML = "Get " + random(specialKillAmounts) + " kills with the " + random(hardWeapons) + " in one game."
             break;
+        case 7:
+            challengeText.innerHTML = "Surive one round without dying"
+            break;
+        case 8:
+            challengeText.innerHTML = "Survive one round without dying as " + random(character) + "."
+            break;
+        case 9:
+            challengeText.innerHTML = "Get a " + random(kills) + " killstreak."
+            break;
+        case 10:
+            challengeText.innerHTML = "Get a " + random(kills) + " killstreak as " + random(character) + "."
         default: 
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
     }
