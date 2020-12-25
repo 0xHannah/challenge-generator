@@ -4,8 +4,10 @@ var basespecialKillAmounts = ["2", "4", "5", "10", "15"]
 var maps = ["2fort", "double cross", "landfall", "sawmill", "turbine", "well", "5gorge", "badlands", "coldfront", "fastlane", "foundry", "freight", "granary", "gullywash", "metalworks", "powerhouse", "process", "snakewater", "sunshine", "vanguard", "well", "yukon", "dustbowl", "egypt", "gorge", "gravel pit", "junction", "mercenary park", "mossrock", "mountain lab", "snowplow", "steel", "standin", "hydro", "badwater basin", "barnblitz", "borneo", "enclosure", "frontier", "gold rush", "hoodoo", "precipice", "snowycoast", "swiftwater", "thunder mountain", "upward", "banana bay", "hightower", "nightfall", "pipeline", "badlands", "koth badlands", "brazil", "harvest", "highpass", "kong king", "lakeside", "lazarus", "nucleus", "probed", "sawmill", "suijin", "viaduct", "doomsday", "dustbowl", "ctf foundry", "ctf gorge", "hellfire", "ctf thunder mountain", "brickyard", "district", "timbertown", "watergate"]
 var character = ["scout", "soldier", "pyro", "demoman", "heavy", "engineer", "medic", "sniper", "spy"]
 var basepoints = ["10", "30", "50", "70", "100"]
-var specialKills = ["headshot", "backstab", "sentry", "market garden", "meatshot", "trickstab", "melee", "airblast", "bleed"]
+var specialKills = ["market garden", "trickstab", "melee", "airblast", "bleed"]
+var easierKills = ["headshot", "backstab", "sentry", "meatshot"]
 var basewins = ["1,", "2", "3", "4", "5"]
+var hardWeapons = ["flying guillotine", "bat", "holy mackerel", "Fan o' war", "wrap assassin", "direct hit", "beggars bazooka", "manntread", "shovel", "escape plan", "fire axe", "lollichop", "sharpened volcano fragment", "third degree", "hot hand", "ullapool caber", "huo-long heater", "family business", "holiday punch", "pomson 6000", "eureka effect", "syringe gun", "blutsauger", "overdose", "bonesaw", "übersaw", "vita-saw", "amputator", "solemn vow", "sydney sleeper", "shahanshah", "enforcer"] 
 
 function random(x) {
     if(difficultyIsDefined && x.length <= 3) {
@@ -64,16 +66,19 @@ function displayChallenge() {
         challengeText.innerHTML = "Play on " + random(maps) + " and get " + random(points) + " points in one game."
             break;
         case 2:
-            challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(points) + " points."
+            challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(points) + " points in one game."
             break;
         case 3:
-            challengeText.innerHTML = "Play on " + random(maps) + " and get " + random(specialKillAmounts) + " "+  random(specialKills) + " kills."
+            challengeText.innerHTML = "Play on " + random(maps) + " and get " + random(specialKillAmounts) + " "+  random(specialKills) + " kills in one game."
             break;
         case 4:
-            challengeText.innerHTML = "Get " + random(kills) + " assists as " + random(character) + " in one life."
+            challengeText.innerHTML = "Get " + random(kills) + " assists as " + random(character) + " in one round."
             break;
         case 5:
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
+            break;
+        case 6:
+            challengeText.innerHTML = "Get " + random(specialKills) + " kills with the " + random(hardWeapons) + " in one game."
             break;
         default: 
             challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
