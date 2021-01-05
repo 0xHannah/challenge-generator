@@ -72,7 +72,7 @@ function displayChallenge() {
     challengeText.innerHTML = "Choose a difficulty"
     
     if (x == true) {
-        var i = Math.floor(Math.random() * 3)
+        var i = Math.floor(Math.random() * 4)
         switch(i) {
         case 0:
             challengeText.innerHTML = "Complete  " + random(tourAmounts) + " missions on " + random(mvmMaps) + "."
