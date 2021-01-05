@@ -71,7 +71,7 @@ function displayChallenge() {
     var challengeText = document.getElementById("Challenge-Text")
     challengeText.innerHTML = "Choose a difficulty"
     
-    if (x == true) {
+    if (x) {
         var i = Math.floor(Math.random() * 4)
         switch(i) {
         case 0:
@@ -86,7 +86,7 @@ function displayChallenge() {
         case 3:
             challengeText.innerHTML = "Complete the " + random(mvmMission) + " mission."
         default:
-
+            challengeText.innerHTML = "Complete  " + random(tourAmounts) + " missions on " + random(mvmMaps) + "."
         }
     } else {
         var i = Math.floor(Math.random() * 11)
@@ -127,6 +127,4 @@ function displayChallenge() {
                 challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
         }
     }
-    
-    
 }
