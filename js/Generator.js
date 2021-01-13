@@ -12,6 +12,7 @@ var mvmMaps = ["Big Rock", "Coal Town", "Decoy", "Ghost Town", "Mannhattan", "Ma
 var tourAmounts = ["1", "1", "2", "3", "4"]
 var mvmMission = ["Doe's Drill", "Doe's Doom", "Day of Wreckening", "Disk Deletion", "Data Demolition", "Disintegration", "Desperation", "Crash Course", "Cave-in", "Quarry", "Ctrl+Alt+Destruction", "CPU Slaughter", "Cataclysm", "Caliginous Caper", "Mann-euvers", "Mean Machines", "Mannhunt", "Machine Massacre", "Mech Mutiliation" ,"Mannslaughter", "Benign Infiltration", "Broken Parts", "Bone Shaker", "Big Apple Barricade", "Empire Escalation", "Metro Malice", "Village Vanguard", "Hamlet Hostility", "Bavarian Botbash"]
 var operations = ["Steel Trap", "Oil Spill", "Gear Grinder", "Mecha Engine", "Two Cities"]
+var hardCodedChallenges = ["Bind your movement keys to your mouse and play without a keyboard for one game.", "Play with a friend where one controls the keyboard and one controls the mouse for one game.", ""]
 var x = false
 
 function random(x) {
@@ -89,7 +90,7 @@ function displayChallenge() {
             challengeText.innerHTML = "Complete  " + random(tourAmounts) + " missions on " + random(mvmMaps) + "."
         }
     } else {
-        var i = Math.floor(Math.random() * 11)
+        var i = Math.floor(Math.random() * 12)
         switch(i) {
             case 0: 
             challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
@@ -123,7 +124,9 @@ function displayChallenge() {
                 break;
             case 10:
                 challengeText.innerHTML = "Get a " + random(kills) + " killstreak as " + random(character) + "."
-            default: 
+            case 11:
+                challengeText.innerHTML = random(hardCodedChallenges)
+                default: 
                 challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
         }
     }
