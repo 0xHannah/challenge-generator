@@ -12,7 +12,7 @@ var mvmMaps = ["Big Rock", "Coal Town", "Decoy", "Ghost Town", "Mannhattan", "Ma
 var tourAmounts = ["1", "1", "2", "3", "4"]
 var mvmMission = ["Doe's Drill", "Doe's Doom", "Day of Wreckening", "Disk Deletion", "Data Demolition", "Disintegration", "Desperation", "Crash Course", "Cave-in", "Quarry", "Ctrl+Alt+Destruction", "CPU Slaughter", "Cataclysm", "Caliginous Caper", "Mann-euvers", "Mean Machines", "Mannhunt", "Machine Massacre", "Mech Mutiliation" ,"Mannslaughter", "Benign Infiltration", "Broken Parts", "Bone Shaker", "Big Apple Barricade", "Empire Escalation", "Metro Malice", "Village Vanguard", "Hamlet Hostility", "Bavarian Botbash"]
 var operations = ["Steel Trap", "Oil Spill", "Gear Grinder", "Mecha Engine", "Two Cities"]
-var hardCodedChallenges = ["Bind your movement keys to your mouse and play without a keyboard for one game.", "Play with a friend where one controls the keyboard and one controls the mouse for one game.", ""]
+var hardCodedChallenges = ["Bind your movement keys to your mouse and play without a keyboard for one game.", "Play with a friend where one controls the keyboard and one controls the mouse for one game.", "Bind mouse1 and mouse2 to the keyboard for one game.", "Play with a mousepad for one game.", "Play with a controller for one game.", "Play with double your sensitivity for one game.", "Unbind W, A and D, and only walk backwards for one game.", ""]
 var x = false
 
 function random(x) {
