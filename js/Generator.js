@@ -90,7 +90,7 @@ function displayChallenge() {
             challengeText.innerHTML = "Complete  " + random(tourAmounts) + " missions on " + random(mvmMaps) + "."
         }
     } else {
-        var i = Math.floor(Math.random() * 12)
+        var i = Math.floor(Math.random() * 15)
         switch(i) {
             case 0: 
             challengeText.innerHTML = "Play on " + random(maps) + " as " + random(character) + " and get " + random(kills) + " kills in one life."
@@ -126,6 +126,16 @@ function displayChallenge() {
                 challengeText.innerHTML = "Get a " + random(kills) + " killstreak as " + random(character) + "."
             case 11:
                 challengeText.innerHTML = random(hardCodedChallenges)
+                break;
+            case 12:
+                challengeText.innerHTML = random(hardCodedChallenges)
+                break;
+            case 13:
+                challengeText.innerHTML = random(hardCodedChallenges)
+                break;
+            case 14:
+                    challengeText.innerHTML = random(hardCodedChallenges)
+                    break;
                 default: 
                 challengeText.innerHTML = "Complete " + random(wins) + " map objectives on " + random(maps) + "."
         }
