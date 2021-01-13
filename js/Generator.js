@@ -114,7 +114,7 @@ function displayChallenge() {
                 challengeText.innerHTML = "Get " + random(specialKillAmounts) + " kills with the " + random(hardWeapons) + " in one game."
                 break;
             case 7:
-                challengeText.innerHTML = "Surive one round without dying"
+                challengeText.innerHTML = "Survive one round without dying"
                 break;
             case 8:
                 challengeText.innerHTML = "Survive one round without dying as " + random(character) + "."
